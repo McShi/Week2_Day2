@@ -68,12 +68,56 @@ namespace Week2_Day2
             //    Console.WriteLine(month);
             //}
 
-            string[] bands = { "Jay-Z", "Busi Mhlongo", "Kendrick Lamar", "The Beatles", "Rolling Stones", "Thelonius Monk" };
+            //string[] bands = { "Jay-Z", "Busi Mhlongo", "Kendrick Lamar", "The Beatles", "Rolling Stones", "Thelonius Monk" };
 
-            foreach(string band in bands)
+            //foreach(string band in bands)
+            //{
+            //    Console.WriteLine(band);
+            //}
+
+            //for(int i = 10; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Console.WriteLine("Do you want to play the game? (YES/NO)");
+            //string playAgain = Console.ReadLine();
+
+            //while (playAgain == "YES")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+
+            //Console.WriteLine("Would you like to check in for your appointment? YES/NO");
+            //string appCheck = Console.ReadLine().ToUpper();
+
+            //while(appCheck != "YES")
+            //{
+            //    Console.WriteLine("PATIENT CHECK IN SYSTEM");
+            //    Console.WriteLine("Please enter your full name.");
+            //    string fullName = Console.ReadLine().ToUpper();
+
+            //    Console.WriteLine("Please enter your 6-digit patient ID.");
+            //    int patientId = int.Parse(Console.ReadLine().ToUpper());
+
+            //    Console.WriteLine("Please enter your appointment time.");
+            //    string appTime = Console.ReadLine().ToUpper();
+
+            //    Console.WriteLine("You are now checked in. Have a nice day.");
+            //    Console.WriteLine("Would you like to check in a patient for their appointment?");
+            //}
+
+            string playAgain;
+            do
             {
-                Console.WriteLine(band);
+                //Console.WriteLine("Do you want to play the game? YES/NO");
+                Console.WriteLine("Great game!");
+                Console.WriteLine("Do you want to play again? YES/NO");
+                playAgain = Console.ReadLine().ToUpper();
             }
+            while (playAgain == "YES");
         }
     }
 }
