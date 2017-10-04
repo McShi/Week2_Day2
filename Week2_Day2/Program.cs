@@ -109,15 +109,65 @@ namespace Week2_Day2
             //    Console.WriteLine("Would you like to check in a patient for their appointment?");
             //}
 
-            string playAgain;
-            do
+            //string playAgain;
+            //do
+            //{
+            //    //Console.WriteLine("Do you want to play the game? YES/NO");
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine().ToUpper();
+            //}
+            //while (playAgain == "YES");
+
+            //string userGrades;
+            //do
+            //{
+            //    Console.WriteLine("What class would you like to add to your GPA calculation?");
+            //    Console.ReadLine();
+            //    Console.WriteLine("Please enter the letter grade for the class.");
+            //    Console.ReadLine();
+            //    Console.WriteLine("Do you have another class you would like to add to your GPA calculation?");
+            //    userGrades = Console.ReadLine().ToUpper();
+            //}
+            //while (userGrades == "YES");
+
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+
+            //for (int i = 1; i <= 20; i++)
+            //{
+            //    if (i % 13 == 0)
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("The loop has finished.");
+
+            //for (int i = 1; i <= 4; i++)
+            //{
+            //    for (int j = 1; j <= 8; j++)
+            //    {
+            //        Console.Write(j); /*columns*/
+            //    }
+            //    Console.WriteLine(); /*next row*/
+            //}
+
+            int n = int.Parse(Console.ReadLine());
+            for (int row = 1; row <= n; row++)
             {
-                //Console.WriteLine("Do you want to play the game? YES/NO");
-                Console.WriteLine("Great game!");
-                Console.WriteLine("Do you want to play again? YES/NO");
-                playAgain = Console.ReadLine().ToUpper();
+                for (int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
             }
-            while (playAgain == "YES");
         }
     }
 }
